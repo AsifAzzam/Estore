@@ -1,0 +1,79 @@
+﻿@model IEnumerable<PersonalEstore.cs.Models.MobilePhones>
+
+@{
+    ViewBag.Title = "AdminIndex";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var _context = new PersonalEstore.cs.Models.ApplicationDbContext();
+}
+
+<h2 class="pt-5 mb-5 text-primary">Mobile Phones</h2>
+
+<table id="mobile" class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Company</th>
+            <th>Camera</th>
+            <th>Screen Size</th>
+            <th>Color</th>
+            <th>Display</th>
+            <th>Category</th>
+            <th>Images</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var m in Model)
+        {
+            <tr>
+                <td>@Html.ActionLink(m.Name, "Edit", "MobilePhones", new { id = m.Id }, new { @class = "btn-link" })</td>
+                <td>@m.Manufacturer.Name</td>
+                <td>Front Camera: @m.FrontCamera  BackCamera: @m.RearCamera</td>
+                <td>@m.ScreenSize</td>
+                <td>@m.Colors.Replace(",", " ")</td>
+                <td>@m.Display</td>
+                <td>@m.Category.Name</td>
+                <td><img height="80px" width="200px" src="~/image/@m.Image"></td>
+                <td>
+                    <button data-mobile-id="@m.Id" class="btn btn-link js-delete">Delete</button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@section scripts
+
+{
+    <script>
+        $(document).ready(function () {
+            var table = $("#mobile").DataTable();
+
+            $("#mobile").on("click", ".js-edit", function () {
+                $.ajax({
+                    url: "/mobilephones/edit/" + btn.attr("data-edit-id"),
+                    success: function () {
+                        console.log("editing")
+                    }
+                });
+            });
+            
+
+            $("#mobile").on("click", ".js-delete", function () {
+                var btn = $(this);
+                bootbox.confirm("Are You sure you want To Delete", function (result) {
+                    if (result) {
+                        $.ajax({
+                            url: "/mobilephones/delete/" + btn.attr("data-mobile-id"),
+                            success: function () {
+                                table.row(btn.parents("tr")).remove().draw();
+                            }
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+}
+
+

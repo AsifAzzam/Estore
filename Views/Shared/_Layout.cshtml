@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+
+<body>
+    <div class="navbar navbar-expand-sm navbar-dark fixed-top" style="background-color:rgba(0, 116, 240, 0.8);">
+
+
+        @if (User.IsInRole("isAdmin"))
+        {
+            @Html.ActionLink("Bazar", "Index", "Home", "", new { @class = "navbar-brand" })
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#homenav">
+                <span class="mr-sm-0 navbar-toggler-icon"></span>
+            </button>
+            <div id="homenav" class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        @Html.ActionLink("Mobile Phones", "Index", "MobilePhones", "", new { @class = "nav-link", data_toggle = "dropdown" })
+                        <div class="dropdown-menu">
+                            @Html.ActionLink("Add Mobile", "AddMobile", "MobilePhones", "", new { @class = "nav-link dropdown-item" })
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        @Html.ActionLink("Manufacturer", "Index", "Manufacturer", "", new { @class = "nav-link", data_toggle = "dropdown" })
+                        <div class="dropdown-menu">
+                            @Html.ActionLink("Add Manufacturer", "AddManufacturer", "Manufacturer", "", new { @class = "nav-link dropdown-item" })
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        @Html.ActionLink("Categories", "Index", "Category", "", new { @class = "nav-link", data_toggle = "dropdown" })
+                        <div class="dropdown-menu">
+                            @Html.ActionLink("Add Category", "AddCategory", "Category", "", new { @class = "nav-link dropdown-item" })
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        @Html.ActionLink("Cosmatics", "Index", "Cosmatics", "", new { @class = "nav-link", data_toggle = "dropdown" })
+                        <div class="dropdown-menu">
+                            @Html.ActionLink("Add Cosmatics", "AddCosmatics", "Cosmatics", "", new { @class = "nav-link dropdown-item" })
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        @Html.ActionLink("TV-Audio-Video", "Index", "HomeAppliances", "", new { @class = "nav-link", data_toggle = "dropdown" })
+                        <div class="dropdown-menu">
+                            @Html.ActionLink("Add Item", "AddAppliances", "HomeAppliances", "", new { @class = "nav-link dropdown-item" })
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        @Html.ActionLink("Clothing ", "Index", "Clothing", "", new { @class = "nav-link", data_toggle = "dropdown" })
+                        <div class="dropdown-menu">
+                            @Html.ActionLink("Add Item", "AddClothing", "Clothing", "", new { @class = "nav-link mt-0 dropdown-item" })
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        }
+        else
+        {
+            <a class="navbar-brand" href="/home">
+                Bazar
+                <img src="~/image/logo2.jpg" style="height:50px; width:300px;" />
+            </a>
+            <div class="ml-auto justify-content-end">
+                <div class="row justify-content-end">
+                    <div class="flex-row">
+                        @Html.Partial("_LoginPartial")
+                    </div>
+                    <div class="flex-row">
+                        <form class=" mx-5 form-inline">
+                            <input type="text" class="form-control" placeholder="Search" />
+                            <button class="btn btn-light ml-2">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+             }
+        </div>
+
+   
+
+    <div class="body-content" style="margin-top:75px;">
+        @if (User.IsInRole("isAdmin"))
+        {
+            <div class=" mb-2 ml-auto justify-content-end">
+                <div class="row justify-content-end">
+                    <div class="flex-row">
+                        @Html.Partial("_LoginPartial")
+                    </div>
+                    <div class="flex-row">
+                        <form class=" form-inline">
+                            <input type="text" class="form-control" placeholder="Search" />
+                            <button class="btn btn-light mr-5 ml-2">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        }
+
+
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/lib")
+    @RenderSection("scripts", required: false)
+    <script>
+        $(document).ready(function () {
+            //$("#homenav").on("mouseenter", ".nav-link", function () {
+            //    $(".dropdown-menu").dropdown();
+            //    console.log("on nav");
+            //});
+
+            $('#homenav').on('mouseenter mouseleave', '.dropdown', function (e) {
+                var _d = $(e.target).closest('.dropdown');
+                if (e.type === 'mouseenter') _d.addClass('show');
+                setTimeout(function () {
+                    _d.toggleClass('show', _d.is(':hover'));
+                    $('[data-toggle="dropdown"]', _d).attr('aria-expanded', _d.is(':hover'));
+                }, 300);
+
+                console.log("sidebar");
+            });
+            $('.nav-link').click(function () {
+                window.location = $(this).attr('href');
+
+            });
+        });
+    </script>
+</body>
+</html>
+

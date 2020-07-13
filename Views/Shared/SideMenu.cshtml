@@ -1,0 +1,37 @@
+﻿@*@model IEnumerable<PersonalEstore.cs.Models.Category>*@
+
+<ul class="list-unstyled side-menu-ul">
+    @foreach (var c in Model)
+    {
+
+        if (c.ParentId == null)
+        {
+            <li class="dropdown dropright">
+                <a class="list-group-item side-menu nav-link" href="/@c.Name.Replace(" ","")/index" data-toggle="dropdown" data-target="subitems">@c.Name</a>
+                @foreach (var ch in Model)
+                {
+                    if (ch.ParentId == c.Id)
+                    {
+                <div class="dropdown-menu side-menu-box">
+                    @foreach (var child in Model)
+                    {
+                        if (c.Id == child.ParentId)
+                        {
+
+                            @*<a class="nav-link dropdown-item" href="/@child.Parent.Name.Replace(" ","")/index">@child.Name</a>*@
+
+                            @*<a data-filter="dg" class="nav-link dropdown-item" href="@Url.Action(c.Name.Replace(" ",""),"records",new { filters = child.Name.Replace(" ","")})">@child.Name</a>*@
+                            var parentname = c.Name;
+                            var childname = child.Name;
+                            @Html.ActionLink( (string)childname, "Index",(string)parentname.Replace(" ",""), new { filters = child.Name.ToString() }, new { @class = "nav-link dropdown-item" })
+                          }
+
+                            }
+                        </div>
+                    }
+                }
+
+            </li>
+        }
+    }
+</ul>

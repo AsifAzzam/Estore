@@ -1,0 +1,77 @@
+﻿@model List<PersonalEstore.cs.Models.Manufacturer>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 class="pt-5 mb-5 text-primary">Index</h2>
+
+<table id="manuf" class="table table-responsive-sm table-responsive-md">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Contact No</th>
+            <th>Email</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var m in Model)
+        {
+        <tr>
+            <td>@Html.ActionLink(m.Name, "Details", new { id = m.Id })</td>
+            <td>@m.Address</td>
+            <td>@m.ContactNo</td>
+            <td>@m.Email</td>
+            <td>
+                @*<button data-manuf-id="@m.Id" class="btn btn-primary js-edit">Edit</button>*@
+                @Html.ActionLink("Edit", "Edit", new { id=m.Id},new {@class = "btn btn-primary" })
+            </td>
+            <td>
+                <button data-manuf-id="@m.Id" class="btn btn-primary js-delete">Delete</button>
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>
+
+@section Scripts
+{
+<script>
+    $(document).ready(function () {
+
+        var table = $("#manuf").DataTable();
+        // I commented this ajax call bcoz ajax does not allow to redirect to another view.
+        //  if we have to do it then we need to pass identifier and url through ajax file  
+        //$("#manuf").on("click", ".js-edit", function () {
+        //    var btn = $(this);
+        //    $.ajax({
+        //        url: "/manufacturer/edit/" + btn.attr("data-manuf-id"),
+        //        success: function () {
+        //            console.log("editing");
+        //        }
+        //    });
+        //});
+
+        $("#manuf").on("click", ".js-delete", function () {
+            var btn = $(this);
+            bootbox.confirm("Are You Sure you want to delete", function (result) {
+                if (result) {
+                    $.ajax({
+                        url: "/manufacturer/delete/" + btn.attr("data-manuf-id"),
+                        success: function () {
+                            //console.log("before Delete")
+                            //table.row(btn.parents("tr")).remove().draw();
+                            //console.log("In Delete")
+                        }
+                    });
+                }
+            });
+
+
+        });
+    });
+</script>
+}

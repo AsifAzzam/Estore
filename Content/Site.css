@@ -1,0 +1,69 @@
+﻿body {
+    padding-top: 0;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.myjumbo{
+    padding:0;
+    margin-left:0;
+}
+
+.dropdown:hover > .dropdown-menu {
+    display: block;
+    padding: 5px;
+    overflow:hidden;
+}
+
+.dropdown-menu {
+    background-color: rgba(0, 116, 240, 0.6);
+    padding: 0px;
+    margin: 0px;
+    font-weight: bold;
+    margin-top: 0px;
+}
+
+.side-menu-box {
+    background-color: rgba(255, 255, 255, 0.8) !important;
+    padding: 0px;
+    margin: 0px;
+}
+
+.col-2{
+    padding-left:0px;
+    padding-right:0px;
+}
+
+.side-menu {
+padding-top:10px;
+padding-bottom:10px;
+}
+.boxes {
+    transition: transform .2s;
+}
+    .boxes:hover {
+        transform: scale(1.5) !important;
+        border: 10px solid black !important;
+        -ms-transform: scale(1.5); /* IE 9 */
+        -webkit-transform: scale(1.5); /* Safari 3-8 */
+        transform: scale(1.5);
+    }

@@ -1,0 +1,59 @@
+﻿@model IEnumerable<PersonalEstore.cs.Models.Cosmatics>
+@{
+    ViewBag.Title = "AdminIndex";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 class="pt-5 mb-5 text-primary">Cosmatics</h2>
+
+<table id="cosmatics" class="table">
+    <thead>
+        <tr class="text-center">
+            <th>Name</th>
+            <th>Company</th>
+            <th>Price</th>
+            <th>Stock</th>
+            <th>Category</th>
+            <th>Images</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var m in Model)
+        {
+            <tr class="text-center">
+                <td>@Html.ActionLink(m.Name, "Edit", "Cosmatics", new { id = m.Id }, new { @class = "btn-link" })</td>
+                <td>@m.Manufacturer.Name</td>
+                <td>@m.Price</td>
+                <td>@m.Stock</td>
+                <td>@m.Category.Name</td>
+                <td><img height="80px" width="200px" src="~/image/@m.Image"></td>
+                <td>
+                    <button data-cos-id="@m.Id" class="btn btn-primary js-delete">Delete</button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@section scripts
+{
+    <script>
+        $(document).ready(function () {
+            var table = $("#cosmatics").DataTable();
+            $("#cosmatics").on("click", ".js-delete", function () {
+                var btn = $(this);
+                bootbox.confirm("Are You Sure To Delete", function (result) {
+                    if (result) {
+                        $.ajax({
+                            url: "/cosmatics/delete/" + btn.attr("data-cos-id"),
+                            success: function () {
+                                table.row(btn.parents("tr")).remove().draw();
+                            }
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+}

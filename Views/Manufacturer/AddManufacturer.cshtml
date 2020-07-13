@@ -1,0 +1,44 @@
+﻿@model PersonalEstore.cs.Models.Manufacturer
+@{
+    ViewBag.Title = "AddManufacturer";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Add Manufacturer</h2>
+@Html.ValidationSummary(true, "Please Remove Following Errors")
+@using (Html.BeginForm("SaveManufacturer", "Manufacturer"))
+{
+    <div class="form-group">
+        @Html.LabelFor(m => m.Name)
+        @Html.TextBoxFor(m => m.Name, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Name)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Address)
+        @Html.TextBoxFor(m => m.Address, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Address)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.ContactNo)
+        @Html.TextBoxFor(m => m.ContactNo, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.ContactNo)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Email)
+        @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Email)
+    </div>
+
+    <button class="btn btn-primary" type="submit">Add Manufacturer</button>
+
+}
+
+@section scripts
+{
+    @*this bundle to implement Jquery client side validation.
+        it this bundle is not referenced here client side validation will be inactive*@
+    @Scripts.Render("~/bundles/jqueryval")
+}

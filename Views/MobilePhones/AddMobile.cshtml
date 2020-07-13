@@ -1,0 +1,87 @@
+﻿@model PersonalEstore.cs.ViewModel.MobileManufViewModel
+@{
+    ViewBag.Title = "AddPhone";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Add Phone</h2>
+
+@using (Html.BeginForm("SaveMobile", "MobilePhones", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <div class="form-group">
+        @Html.LabelFor(m => m.MobilePhone.Name)
+        @Html.TextBoxFor(m => m.MobilePhone.Name, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.MobilePhone.Name)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.MobilePhone.Price)
+        @Html.TextBoxFor(m => m.MobilePhone.Price, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.MobilePhone.Price)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.MobilePhone.Stock)
+        @Html.TextBoxFor(m => m.MobilePhone.Stock, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.MobilePhone.Stock)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.MobilePhone.Colors)
+        @Html.TextBoxFor(m => m.MobilePhone.Colors, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.MobilePhone.Colors)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.MobilePhone.Display)
+        @Html.TextBoxFor(m => m.MobilePhone.Display, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.MobilePhone.Display)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.MobilePhone.FrontCamera)
+        @Html.TextBoxFor(m => m.MobilePhone.FrontCamera, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.MobilePhone.FrontCamera)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.MobilePhone.RearCamera)
+        @Html.TextBoxFor(m => m.MobilePhone.RearCamera, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.MobilePhone.RearCamera)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.MobilePhone.ScreenSize)
+        @Html.TextBoxFor(m => m.MobilePhone.ScreenSize, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.MobilePhone.ScreenSize)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.MobilePhone.CategoryId)
+        @Html.DropDownListFor(m => m.MobilePhone.CategoryId, new SelectList(Model.Category, "Id", "Name"), "Select Category", new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.MobilePhone.Category)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.MobilePhone.ManufacturerId)
+        @Html.DropDownListFor(m => m.MobilePhone.ManufacturerId, new SelectList(Model.Manufacturer, "Id", "Name"), "Select Manufturer", new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.MobilePhone.ManufacturerId)
+    </div>
+
+    <div class="form-group">
+        <input type="file" name="postedFile" class=" form-control-file" />
+        @*@Html.LabelFor(m=>m.MobilePhone.Image,new {@class = "custom-file-label" })*@
+        <small>Upload Image</small>
+    </div>
+
+    @Html.HiddenFor(m => m.MobilePhone.Id)
+    <button class="mt-5 btn btn-primary" type="submit">Save</button>
+}
+
+@section scripts
+{
+    @*this bundle to implement Jquery client side validation.
+        it this bundle is not referenced here client side validation will be inactive*@
+    @Scripts.Render("~/bundles/jqueryval")
+}
+

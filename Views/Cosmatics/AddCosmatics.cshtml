@@ -1,0 +1,55 @@
+﻿@model PersonalEstore.cs.ViewModel.CosmaticsViewModel
+@{
+    ViewBag.Title = "AddCosmatics";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 class="mt-5 mt-3">Add Cosmatics</h2>
+
+@using (Html.BeginForm("SaveCosmatics", "Cosmatics", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <div class="form-group">
+        @Html.LabelFor(m => m.Cosmatics.Name)
+        @Html.TextBoxFor(m => m.Cosmatics.Name, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Cosmatics.Name)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Cosmatics.Price)
+        @Html.TextBoxFor(m => m.Cosmatics.Price, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Cosmatics.Price)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Cosmatics.Stock)
+        @Html.TextBoxFor(m => m.Cosmatics.Stock, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Cosmatics.Stock)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Cosmatics.CategoryId)
+        @Html.DropDownListFor(m => m.Cosmatics.CategoryId, new SelectList(Model.Category, "Id", "Name"), "Select Category", new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Cosmatics.Category)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Cosmatics.ManufacturerId)
+        @Html.DropDownListFor(m => m.Cosmatics.ManufacturerId, new SelectList(Model.Manufacturer, "Id", "Name"), "Select Manufturer", new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Cosmatics.ManufacturerId)
+    </div>
+
+    <div class="form-group">
+        <input type="file" name="postedFile" class=" form-control-file" />
+        <small>Upload Image</small>
+    </div>
+
+    @Html.HiddenFor(m => m.Cosmatics.Id)
+    <button class="mt-5 btn btn-primary" type="submit">Save</button>
+}
+
+@section scripts
+{
+    @*this bundle to implement Jquery client side validation.
+        it this bundle is not referenced here client side validation will be inactive*@
+    @Scripts.Render("~/bundles/jqueryval")
+}

@@ -1,0 +1,57 @@
+﻿@model IEnumerable<PersonalEstore.cs.Models.MobilePhones>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var _context = new PersonalEstore.cs.Models.ApplicationDbContext();
+}
+
+
+@*<div id="filterdiv" class="form-check-inline">
+    <input data-samsung="samsung" class="form-check-input" id="samsungchkbox" type="checkbox" />samsung Phones
+    <input class="form-check-input" id="huwavichkbox" type="checkbox" />huwawi phones
+    <input class="form-check-input" id="displayhd" type="checkbox" /> hd phones
+</div>*@
+
+<div class="myjumbo jumbotron jumbotron-fluid">
+    <img class="" src="~/images/olx.png" />
+</div>
+
+<h2 class="text-center">Mobile Phones</h2>
+<div class="row m-0">
+
+    <div class="col-2">
+        @*for displaying sidebar menu*@
+        @Html.Partial("SideMenu", _context.Category.ToList())
+    </div>
+
+    <div class="col-10">
+        <div class="container">
+            @foreach (var m in Model)
+            {
+                <div class="row d-inline-block m-1">
+
+                    <a href="/mobilephones/details/@m.Id" class="text-muted">
+                        <div class="card text-center m-3 shadow" style="border: 1px solid rgba(0, 116, 240, 0.4)">
+                            <img src="~/image/@m.Image" class="img-fluid card-img" style="width:200px; height:170px; " />
+                            <p class="card-text">
+                                @m.Name<br />
+                                @m.Manufacturer.Name<br />
+                                <text class="text-danger">@m.Price PKR</text>
+                            </p>
+                        </div>
+                        </a>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+@section scripts
+
+{
+    <script>
+        $(document).ready(function () {
+
+        });
+    </script>
+}

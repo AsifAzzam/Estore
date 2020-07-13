@@ -1,0 +1,307 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Z.EntityFramework.Plus.QueryIncludeFilter.EFClassic</name>
+    </assembly>
+    <members>
+        <member name="M:Z.EntityFramework.Plus.InternalExtensions.GetPropertyOrFieldAccessor(System.Linq.Expressions.LambdaExpression)">
+            <summary>
+                A LambdaExpression extension method that gets property or field accessor.
+            </summary>
+            <exception cref="T:System.Exception">Thrown when an exception error condition occurs.</exception>
+            <param name="this">The @this to act on.</param>
+            <returns>The property or field accessor.</returns>
+        </member>
+        <member name="M:Z.EntityFramework.Plus.InternalExtensions.GetPropertyOrFieldAccessors(System.Linq.Expressions.LambdaExpression)">
+            <summary>
+                Gets the property or field accessors in this collection.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <returns>An array of property or field accessor.</returns>
+        </member>
+        <member name="M:Z.EntityFramework.Plus.InternalExtensions.RemoveConvert(System.Linq.Expressions.Expression)">
+            <summary>
+                An Expression extension method that removes all convert expression from the expression.
+            </summary>
+            <param name="this">The @this to act on.</param>
+            <returns>An Expression without convert expression.</returns>
+        </member>
+        <member name="M:Z.EntityFramework.Plus.InternalExtensions.GetPropertyOrField(System.Linq.Expressions.Expression,System.Linq.Expressions.ParameterExpression)">
+            <summary>
+                An Expression extension method that gets a property or field from an expression.
+            </summary>
+            <exception cref="T:System.Exception">Thrown when an exception error condition occurs.</exception>
+            <param name="this">The @this to act on.</param>
+            <param name="parameterExpression">The parameter @this.</param>
+            <returns>The property or field from the expression.</returns>
+        </member>
+        <member name="M:Z.EntityFramework.Plus.InternalExtensions.GetPropertyOrFieldAccess(System.Linq.Expressions.Expression,System.Linq.Expressions.ParameterExpression)">
+            <summary>
+                An Expression extension method that gets a property or field access from an expression.
+            </summary>
+            <exception cref="T:System.Exception">Thrown when an exception error condition occurs.</exception>
+            <param name="this">The @this to act on.</param>
+            <param name="parameterExpression">The parameter @this.</param>
+            <returns>The property or field access from the expression.</returns>
+        </member>
+        <member name="M:Z.EntityFramework.Plus.PropertyOrFieldAccessor.#ctor(System.Collections.ObjectModel.ReadOnlyCollection{System.Reflection.MemberInfo})">
+            <summary>Constructor.</summary>
+            <param name="propertyOrFieldPaths">The FieldPaths.</param>
+        </member>
+        <member name="M:Z.EntityFramework.Plus.PropertyOrFieldAccessor.#ctor(System.Reflection.MemberInfo)">
+            <summary>Constructor.</summary>
+            <param name="property">The property.</param>
+        </member>
+        <member name="P:Z.EntityFramework.Plus.PropertyOrFieldAccessor.PropertyOrFieldPaths">
+            <summary>Gets or sets the FieldPaths.</summary>
+            <value>The FieldPaths.</value>
+        </member>
+        <member name="P:Z.EntityFramework.Plus.PropertyOrFieldAccessor.PropertyOrField">
+            <summary>Gets or sets the property.</summary>
+            <value>The property.</value>
+        </member>
+        <member name="M:Z.EntityFramework.Plus.PropertyOrFieldAccessor.GetValue(System.Object)">
+            <summary>
+                Gets a value.
+            </summary>
+            <param name="obj">The object.</param>
+            <returns>The value.</returns>
+        </member>
+        <member name="M:Z.EntityFramework.Plus.PropertyOrFieldAccessor.GetValue``1(System.Object)">
+            <summary>
+                Gets a value.
+            </summary>
+            <typeparam name="T">Generic type parameter.</typeparam>
+            <param name="obj">The object.</param>
+            <returns>The value.</returns>
+        </member>
+        <member name="M:Z.EntityFramework.Plus.PropertyOrFieldAccessor.SetValue(System.Object,System.Object)">
+            <summary>
+                Sets a value.
+            </summary>
+            <param name="obj">The object.</param>
+            <param name="value">The value.</param>
+        </member>
+        <member name="M:Z.EntityFramework.Plus.PropertyOrFieldAccessor.ToString">
+            <summary>
+                Returns a string that represents the current object.
+            </summary>
+            <returns>A string that represents the current object.</returns>
+        </member>
+        <member name="M:Z.EntityFramework.Plus.Internal.Core.SchemaObjectModel.Utility.CreateGetFunc(System.Type,System.String)">
+            <summary>
+                Creates get function.
+            </summary>
+            <param name="type">The type.</param>
+            <param name="propertyName">Name of the property.</param>
+            <returns>The new get function.</returns>
+        </member>
+        <member name="T:Z.EntityFramework.Plus.BaseQueryIncludeFilterChild">
+            <summary>Base class for query include filter child.</summary>
+        </member>
+        <member name="M:Z.EntityFramework.Plus.BaseQueryIncludeFilterChild.CreateIncludeQuery(System.Linq.IQueryable)">
+            <summary>Creates the query to use to load related entities.</summary>
+            <param name="rootQuery">The root query.</param>
+            <returns>The query to use to load related entities.</returns>
+        </member>
+        <member name="M:Z.EntityFramework.Plus.BaseQueryIncludeFilterChild.GetFilter">
+            <summary>Gets the filter.</summary>
+            <returns>The filter.</returns>
+        </member>
+        <member name="M:Z.EntityFramework.Plus.QueryIncludeFilterExtensions.IncludeFilter``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Collections.Generic.IEnumerable{``1}}})">
+            <summary>
+                An IQueryable&lt;T&gt; extension method that include and filter related entities.
+            </summary>
+            <typeparam name="T">The type of elements of the query.</typeparam>
+            <typeparam name="TChild">The type of elements of the child query.</typeparam>
+            <param name="query">The query to filter included related entities.</param>
+            <param name="queryIncludeFilter">The query filter to apply on included related entities.</param>
+            <returns>An IQueryable&lt;T&gt; that include and filter related entities.</returns>
+        </member>
+        <member name="M:Z.EntityFramework.Plus.QueryIncludeFilterExtensions.IncludeFilter``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}})">
+            <summary>
+                An IQueryable&lt;T&gt; extension method that include and filter related entities.
+            </summary>
+            <typeparam name="T">Generic type parameter.</typeparam>
+            <typeparam name="TChild">Type of the child.</typeparam>
+            <param name="query">The query to filter included related entities.</param>
+            <param name="queryIncludeFilter">The query filter to apply on included related entities.</param>
+            <returns>An IQueryable&lt;T&gt; that include and filter related entities.</returns>
+        </member>
+        <member name="T:Z.EntityFramework.Plus.QueryIncludeFilterChild`2">
+            <summary>A class for query include filter child.</summary>
+            <typeparam name="T">The type of elements of the parent query.</typeparam>
+            <typeparam name="TChild">The type of elements of the child.</typeparam>
+        </member>
+        <member name="M:Z.EntityFramework.Plus.QueryIncludeFilterChild`2.#ctor(System.Linq.Expressions.Expression{System.Func{`0,System.Collections.Generic.IEnumerable{`1}}})">
+            <summary>Constructor.</summary>
+            <param name="filter">The query filter to apply on included related entities.</param>
+        </member>
+        <member name="M:Z.EntityFramework.Plus.QueryIncludeFilterChild`2.#ctor(System.Linq.Expressions.Expression{System.Func{`0,`1}})">
+            <summary>Constructor.</summary>
+            <param name="filter">The query filter to apply on included related entities.</param>
+        </member>
+        <member name="P:Z.EntityFramework.Plus.QueryIncludeFilterChild`2.Filter">
+            <summary>Gets or sets the query filter to include related entities.</summary>
+            <value>The query filter to include related entities.</value>
+        </member>
+        <member name="P:Z.EntityFramework.Plus.QueryIncludeFilterChild`2.FilterSingle">
+            <summary>Gets or sets the query filter to include related entities.</summary>
+            <value>The query filter to include related entities.</value>
+        </member>
+        <member name="M:Z.EntityFramework.Plus.QueryIncludeFilterChild`2.CreateIncludeQuery(System.Linq.IQueryable)">
+            <summary>Creates the query to use to load related entities.</summary>
+            <param name="rootQuery">The root query.</param>
+            <returns>The query to use to load related entities.</returns>
+        </member>
+        <member name="T:Z.EntityFramework.Plus.QueryIncludeFilterLazyLoading">
+            <summary>Collection of query include optimized nulls.</summary>
+        </member>
+        <member name="M:Z.EntityFramework.Plus.QueryIncludeFilterLazyLoading.SetLazyLoaded(System.Object,System.Collections.Generic.List{Z.EntityFramework.Plus.BaseQueryIncludeFilterChild})">
+            <summary>Null collection to empty.</summary>
+            <param name="item">The item.</param>
+            <param name="childs">The childs.</param>
+        </member>
+        <member name="M:Z.EntityFramework.Plus.QueryIncludeFilterLazyLoading.SetLazyLoaded(System.Object,System.Collections.Generic.List{System.String},System.Int32)">
+            <summary>Check null recursive.</summary>
+            <param name="currentItem">The current item.</param>
+            <param name="paths">The paths.</param>
+            <param name="index">Zero-based index of the.</param>
+        </member>
+        <member name="T:Z.EntityFramework.Plus.QueryIncludeFilterNullCollection">
+            <summary>Collection of query include optimized nulls.</summary>
+        </member>
+        <member name="M:Z.EntityFramework.Plus.QueryIncludeFilterNullCollection.NullCollectionToEmpty(System.Object,System.Collections.Generic.List{Z.EntityFramework.Plus.BaseQueryIncludeFilterChild})">
+            <summary>Null collection to empty.</summary>
+            <param name="item">The item.</param>
+            <param name="childs">The childs.</param>
+        </member>
+        <member name="M:Z.EntityFramework.Plus.QueryIncludeFilterNullCollection.CheckNullRecursive(System.Object,System.Collections.Generic.List{System.String},System.Int32)">
+            <summary>Check null recursive.</summary>
+            <param name="currentItem">The current item.</param>
+            <param name="paths">The paths.</param>
+            <param name="index">Zero-based index of the.</param>
+        </member>
+        <member name="T:Z.EntityFramework.Plus.QueryIncludeFilterParentQueryable`1">
+            <summary>A class for query include filter parent queryable.</summary>
+            <typeparam name="T">The type of elements of the query.</typeparam>
+        </member>
+        <member name="M:Z.EntityFramework.Plus.QueryIncludeFilterParentQueryable`1.#ctor(System.Linq.IQueryable{`0})">
+            <summary>Constructor.</summary>
+            <param name="query">The query parent.</param>
+        </member>
+        <member name="M:Z.EntityFramework.Plus.QueryIncludeFilterParentQueryable`1.#ctor(System.Linq.IQueryable{`0},System.Collections.Generic.List{Z.EntityFramework.Plus.BaseQueryIncludeFilterChild})">
+            <summary>Constructor.</summary>
+            <param name="query">The query.</param>
+            <param name="childs">The childs.</param>
+        </member>
+        <member name="P:Z.EntityFramework.Plus.QueryIncludeFilterParentQueryable`1.Childs">
+            <summary>Gets or sets the query childs.</summary>
+            <value>The query childs.</value>
+        </member>
+        <member name="P:Z.EntityFramework.Plus.QueryIncludeFilterParentQueryable`1.InternalProvider">
+            <summary>Gets or sets the internal provider.</summary>
+            <value>The internal provider.</value>
+        </member>
+        <member name="P:Z.EntityFramework.Plus.QueryIncludeFilterParentQueryable`1.OriginalQueryable">
+            <summary>Gets or sets the original queryable.</summary>
+            <value>The original queryable.</value>
+        </member>
+        <member name="P:Z.EntityFramework.Plus.QueryIncludeFilterParentQueryable`1.ElementType">
+            <summary>Gets the type of the element.</summary>
+            <value>The type of the element.</value>
+        </member>
+        <member name="P:Z.EntityFramework.Plus.QueryIncludeFilterParentQueryable`1.Expression">
+            <summary>Gets the expression.</summary>
+            <value>The expression.</value>
+        </member>
+        <member name="P:Z.EntityFramework.Plus.QueryIncludeFilterParentQueryable`1.Provider">
+            <summary>Gets the provider.</summary>
+            <value>The provider.</value>
+        </member>
+        <member name="M:Z.EntityFramework.Plus.QueryIncludeFilterParentQueryable`1.GetEnumerator">
+            <summary>Gets the enumerator.</summary>
+            <returns>The enumerator.</returns>
+        </member>
+        <member name="M:Z.EntityFramework.Plus.QueryIncludeFilterParentQueryable`1.System#Collections#IEnumerable#GetEnumerator">
+            <summary>Gets the enumerator.</summary>
+            <exception cref="T:System.Exception">Thrown when an exception error condition occurs.</exception>
+            <returns>The enumerator.</returns>
+        </member>
+        <member name="M:Z.EntityFramework.Plus.QueryIncludeFilterParentQueryable`1.CreateEnumerable">
+            <summary>Enumerates create enumerable in this collection.</summary>
+            <exception cref="T:System.Exception">Thrown when an exception error condition occurs.</exception>
+            <returns>
+                An enumerator that allows foreach to be used to process create enumerable in this collection.
+            </returns>
+        </member>
+        <member name="M:Z.EntityFramework.Plus.QueryIncludeFilterParentQueryable`1.CreateQueryable">
+            <summary>Creates the queryable.</summary>
+            <exception cref="T:System.Exception">Thrown when an exception error condition occurs.</exception>
+            <returns>The new queryable.</returns>
+        </member>
+        <member name="M:Z.EntityFramework.Plus.QueryIncludeFilterParentQueryable`1.CreateAnonymousFromQuery``2(System.Linq.IQueryable{``0},System.Linq.IQueryable{``1})">
+            <summary>
+                Create a new Queryable selecting parent and child query in an anonymous type.
+            </summary>
+            <typeparam name="TElement">The type of elements of the query.</typeparam>
+            <param name="parent">The parent query.</param>
+            <param name="child">The child query.</param>
+            <returns>The new Queryable selecting parent and child query in an anonymous type.</returns>
+        </member>
+        <member name="M:Z.EntityFramework.Plus.QueryIncludeFilterParentQueryable`1.Include(System.String)">
+            <summary>Includes the related entities path in the query.</summary>
+            <param name="path">The related entities path in the query to include.</param>
+            <returns>The new queryable.</returns>
+        </member>
+        <member name="M:Z.EntityFramework.Plus.QueryIncludeFilterParentQueryable`1.System#Data#Entity#Infrastructure#IDbAsyncEnumerable{T}#GetAsyncEnumerator">
+            <summary>Gets the asynchrounously enumerator.</summary>
+            <exception cref="T:System.Exception">Thrown when an exception error condition occurs.</exception>
+            <returns>The asynchrounously enumerator.</returns>
+        </member>
+        <member name="M:Z.EntityFramework.Plus.QueryIncludeFilterParentQueryable`1.GetAsyncEnumerator">
+            <summary>Gets the asynchrounously enumerator.</summary>
+            <returns>The asynchrounously enumerator.</returns>
+        </member>
+        <member name="T:Z.EntityFramework.Plus.QueryIncludeFilterProvider`1">
+            <summary>A class for query include filter provider.</summary>
+        </member>
+        <member name="M:Z.EntityFramework.Plus.QueryIncludeFilterProvider`1.#ctor(System.Linq.IQueryProvider)">
+            <summary>Constructor.</summary>
+            <param name="originalProvider">The original provider.</param>
+        </member>
+        <member name="P:Z.EntityFramework.Plus.QueryIncludeFilterProvider`1.CurrentQueryable">
+            <summary>Gets or sets the current queryable.</summary>
+            <value>The current queryable.</value>
+        </member>
+        <member name="P:Z.EntityFramework.Plus.QueryIncludeFilterProvider`1.OriginalProvider">
+            <summary>Gets or sets the original provider.</summary>
+            <value>The original provider.</value>
+        </member>
+        <member name="M:Z.EntityFramework.Plus.QueryIncludeFilterProvider`1.CreateQuery(System.Linq.Expressions.Expression)">
+            <summary>Creates a query from the expression.</summary>
+            <exception cref="T:System.Exception">Thrown when an exception error condition occurs.</exception>
+            <param name="expression">The expression to create the query from.</param>
+            <returns>The new query created from the expression.</returns>
+        </member>
+        <member name="M:Z.EntityFramework.Plus.QueryIncludeFilterProvider`1.CreateQuery``1(System.Linq.Expressions.Expression)">
+            <summary>Creates a query from the expression.</summary>
+            <typeparam name="TElement">The type of elements of the query.</typeparam>
+            <param name="expression">The expression to create the query from.</param>
+            <returns>The new query created from the expression.</returns>
+        </member>
+        <member name="M:Z.EntityFramework.Plus.QueryIncludeFilterProvider`1.Execute(System.Linq.Expressions.Expression)">
+            <summary>Executes the given expression.</summary>
+            <exception cref="T:System.Exception">Thrown when an exception error condition occurs.</exception>
+            <param name="expression">The expression to execute.</param>
+            <returns>The object returned by the execution of the expression.</returns>
+        </member>
+        <member name="M:Z.EntityFramework.Plus.QueryIncludeFilterProvider`1.Execute``1(System.Linq.Expressions.Expression)">
+            <summary>Executes the given expression.</summary>
+            <exception cref="T:System.Exception">Thrown when an exception error condition occurs.</exception>
+            <typeparam name="TResult">Type of the result.</typeparam>
+            <param name="expression">The expression to execute.</param>
+            <returns>The object returned by the execution of the expression.</returns>
+        </member>
+    </members>
+</doc>

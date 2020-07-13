@@ -1,0 +1,63 @@
+﻿@model IEnumerable<PersonalEstore.cs.Models.HomeAppliances>
+@{
+    ViewBag.Title = "AdminIndex";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 class="pt-5 mb-5 text-primary">Appliances </h2>
+<table id="appliances" class="table">
+    <thead>
+        <tr class="text-center">
+            <th>Name</th>
+            <th>Company</th>
+            <th>Price</th>
+            <th>Color</th>
+            <th>Display</th>
+            <th>Stock</th>
+            <th>Category</th>
+            <th>Images</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var m in Model)
+        {
+            <tr class="text-center">
+                <td>@Html.ActionLink(m.Name, "Edit", "HomeAppliances", new { id = m.Id }, new { @class = "btn-link" })</td>
+                <td>@m.Manufacturer.Name</td>
+                <td>@m.Price</td>
+                <td>@m.Colors.Replace(",", "")</td>
+                <td>@m.Display</td>
+                <td>@m.Stock</td>
+                <td>@m.Category.Name</td>
+                <td><img height="80px" width="200px" alt="" src="~/image/@m.Image"></td>
+                <td>
+                    <button data-apl-id="@m.Id" class="btn btn-primary js-delete">Delete</button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@section scripts
+{
+    <script>
+        $(document).ready(function () {
+            var table = $("#appliances").DataTable();
+            $("#appliances").on("click", ".js-delete", function () {
+                var btn = $(this);
+                bootbox.confirm("Are You Sure To Delete", function (result) {
+                    if (result) {
+                        $.ajax({
+                            url: "/homeappliances/delete/" + btn.attr("data-apl-id"),
+                            success: function () {
+                                table.row(btn.parents("tr")).remove().draw();
+                            }
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+}
+

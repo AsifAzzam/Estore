@@ -1,0 +1,243 @@
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\PersonalEstore.cs.dll.config
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\PersonalEstore.cs.dll
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\PersonalEstore.cs.pdb
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\roslyn\csc.exe
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\roslyn\csc.exe.config
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\roslyn\csc.rsp
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\roslyn\csi.exe
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\roslyn\csi.exe.config
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\roslyn\csi.rsp
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\roslyn\Microsoft.Managed.Core.targets
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\roslyn\System.AppContext.dll
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\roslyn\System.Collections.Immutable.dll
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\roslyn\System.Console.dll
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\roslyn\System.IO.Compression.dll
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\roslyn\System.IO.FileSystem.dll
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\roslyn\System.IO.Pipes.dll
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\roslyn\System.Reflection.Metadata.dll
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\roslyn\System.Security.AccessControl.dll
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\roslyn\System.Security.Claims.dll
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\roslyn\System.Security.Principal.Windows.dll
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\roslyn\System.ValueTuple.dll
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\roslyn\System.Xml.XmlDocument.dll
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\roslyn\System.Xml.XPath.dll
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\roslyn\vbc.exe
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\roslyn\vbc.exe.config
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\roslyn\vbc.rsp
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\roslyn\VBCSCompiler.exe
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\roslyn\VBCSCompiler.exe.config
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\Antlr3.Runtime.dll
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\EntityFramework.dll
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\EntityFramework.SqlServer.dll
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\Microsoft.AspNet.Identity.Core.dll
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\Microsoft.Owin.dll
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\Microsoft.Owin.Security.Cookies.dll
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\Microsoft.Owin.Security.dll
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\Microsoft.Owin.Security.Facebook.dll
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\Microsoft.Owin.Security.Google.dll
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\Microsoft.Owin.Security.OAuth.dll
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\Microsoft.Owin.Security.Twitter.dll
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\Microsoft.Web.Infrastructure.dll
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\Newtonsoft.Json.dll
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\Owin.dll
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\System.Web.Helpers.dll
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\System.Web.Mvc.dll
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\System.Web.Optimization.dll
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\System.Web.Razor.dll
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\System.Web.WebPages.Deployment.dll
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\System.Web.WebPages.dll
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\System.Web.WebPages.Razor.dll
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\WebGrease.dll
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\EntityFramework.xml
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\EntityFramework.SqlServer.xml
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\System.Web.Helpers.xml
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\System.Web.Mvc.xml
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\System.Web.Optimization.xml
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\System.Web.Razor.xml
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\System.Web.WebPages.xml
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\System.Web.WebPages.Deployment.xml
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\System.Web.WebPages.Razor.xml
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\Antlr3.Runtime.pdb
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\Microsoft.AspNet.Identity.Core.xml
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\Microsoft.Owin.xml
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\Microsoft.Owin.Security.xml
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\Microsoft.Owin.Security.Facebook.xml
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\Microsoft.Owin.Security.Cookies.xml
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\Microsoft.Owin.Security.Google.xml
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\Microsoft.Owin.Security.Twitter.xml
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\Microsoft.Owin.Security.OAuth.xml
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\obj\Debug\PersonalEstore.cs.Migrations.initial.resources
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\obj\Debug\PersonalEstore.cs.Migrations.missedinheritenceonmenclothing.resources
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\obj\Debug\PersonalEstore.cs.Migrations.manufidadded.resources
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\obj\Debug\PersonalEstore.cs.Migrations.attrtomanuf.resources
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\obj\Debug\PersonalEstore.cs.Migrations.attrtomobile.resources
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\obj\Debug\PersonalEstore.cs.Migrations.availbledel.resources
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\obj\Debug\PersonalEstore.cs.Migrations.colorchange.resources
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\obj\Debug\PersonalEstore.cs.Migrations.imgtomobile.resources
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\obj\Debug\PersonalEstore.cs.csproj.GenerateResource.cache
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\obj\Debug\PersonalEstore.cs.csproj.CoreCompileInputs.cache
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\obj\Debug\PersonalEstore.cs.csproj.CopyComplete
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\obj\Debug\PersonalEstore.cs.dll
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\obj\Debug\PersonalEstore.cs.pdb
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\bin\Newtonsoft.Json.xml
+D:\projects\PersonalEstore.cs\PersonalEstore.cs\obj\Debug\PersonalEstore.cs.csprojAssemblyReference.cache
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\PersonalEstore.cs.dll.config
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\PersonalEstore.cs.dll
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\PersonalEstore.cs.pdb
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\roslyn\csc.exe
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\roslyn\csc.exe.config
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\roslyn\csc.rsp
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\roslyn\csi.exe
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\roslyn\csi.exe.config
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\roslyn\csi.rsp
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\roslyn\Microsoft.Managed.Core.targets
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\roslyn\System.AppContext.dll
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\roslyn\System.Collections.Immutable.dll
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\roslyn\System.Console.dll
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\roslyn\System.IO.Compression.dll
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\roslyn\System.IO.FileSystem.dll
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\roslyn\System.IO.Pipes.dll
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\roslyn\System.Reflection.Metadata.dll
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\roslyn\System.Security.AccessControl.dll
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\roslyn\System.Security.Claims.dll
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\roslyn\System.Security.Principal.Windows.dll
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\roslyn\System.ValueTuple.dll
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\roslyn\System.Xml.XmlDocument.dll
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\roslyn\System.Xml.XPath.dll
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\roslyn\vbc.exe
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\roslyn\vbc.exe.config
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\roslyn\vbc.rsp
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\roslyn\VBCSCompiler.exe
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\roslyn\VBCSCompiler.exe.config
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\Antlr3.Runtime.dll
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\EntityFramework.dll
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\EntityFramework.SqlServer.dll
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\Microsoft.AspNet.Identity.Core.dll
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\Microsoft.Owin.dll
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\Microsoft.Owin.Security.Cookies.dll
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\Microsoft.Owin.Security.dll
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\Microsoft.Owin.Security.Facebook.dll
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\Microsoft.Owin.Security.Google.dll
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\Microsoft.Owin.Security.OAuth.dll
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\Microsoft.Owin.Security.Twitter.dll
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\Microsoft.Web.Infrastructure.dll
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\Newtonsoft.Json.dll
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\Owin.dll
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\System.Web.Helpers.dll
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\System.Web.Mvc.dll
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\System.Web.Optimization.dll
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\System.Web.Razor.dll
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\System.Web.WebPages.Deployment.dll
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\System.Web.WebPages.dll
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\System.Web.WebPages.Razor.dll
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\WebGrease.dll
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\Z.EntityFramework.Plus.QueryIncludeFilter.EFClassic.dll
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\EntityFramework.xml
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\EntityFramework.SqlServer.xml
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\Newtonsoft.Json.xml
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\System.Web.Helpers.xml
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\System.Web.Mvc.xml
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\System.Web.Razor.xml
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\System.Web.WebPages.xml
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\System.Web.WebPages.Deployment.xml
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\System.Web.WebPages.Razor.xml
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\System.Web.Optimization.xml
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\Antlr3.Runtime.pdb
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\Z.EntityFramework.Plus.QueryIncludeFilter.EFClassic.xml
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\Microsoft.AspNet.Identity.Core.xml
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\Microsoft.Owin.xml
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\Microsoft.Owin.Security.xml
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\Microsoft.Owin.Security.Facebook.xml
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\Microsoft.Owin.Security.Cookies.xml
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\Microsoft.Owin.Security.Google.xml
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\Microsoft.Owin.Security.Twitter.xml
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\Microsoft.Owin.Security.OAuth.xml
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\obj\Debug\PersonalEstore.cs.Migrations.initial.resources
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\obj\Debug\PersonalEstore.cs.Migrations.missedinheritenceonmenclothing.resources
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\obj\Debug\PersonalEstore.cs.Migrations.manufidadded.resources
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\obj\Debug\PersonalEstore.cs.Migrations.attrtomanuf.resources
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\obj\Debug\PersonalEstore.cs.Migrations.attrtomobile.resources
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\obj\Debug\PersonalEstore.cs.Migrations.availbledel.resources
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\obj\Debug\PersonalEstore.cs.Migrations.colorchange.resources
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\obj\Debug\PersonalEstore.cs.Migrations.imgtomobile.resources
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\obj\Debug\PersonalEstore.cs.Migrations.categoryadded.resources
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\obj\Debug\PersonalEstore.cs.Migrations.categoryadded2.resources
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\obj\Debug\PersonalEstore.cs.Migrations.categoryedit.resources
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\obj\Debug\PersonalEstore.cs.Migrations.category3.resources
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\obj\Debug\PersonalEstore.cs.Migrations.categoryidadded.resources
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\obj\Debug\PersonalEstore.cs.Migrations.testcatlist.resources
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\obj\Debug\PersonalEstore.cs.Migrations.cat_to_single.resources
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\obj\Debug\PersonalEstore.cs.Migrations.foreignkey.resources
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\obj\Debug\PersonalEstore.cs.Migrations.image_moved_to_Item.resources
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\obj\Debug\PersonalEstore.cs.Migrations.chng_in_color_of_Clothes.resources
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\obj\Debug\PersonalEstore.cs.Migrations.addinguseratrb.resources
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\obj\Debug\PersonalEstore.cs.Migrations.clothingchanged.resources
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\obj\Debug\PersonalEstore.cs.Migrations.womenclothingremoved.resources
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\obj\Debug\PersonalEstore.cs.csproj.GenerateResource.cache
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\obj\Debug\PersonalEstore.cs.csproj.CoreCompileInputs.cache
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\obj\Debug\PersonalEstore.cs.csproj.CopyComplete
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\obj\Debug\PersonalEstore.cs.dll
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\obj\Debug\PersonalEstore.cs.pdb
+D:\projects\PersonalEstore.cs - Copy\PersonalEstore.cs\obj\Debug\PersonalEstore.cs.csprojAssemblyReference.cache

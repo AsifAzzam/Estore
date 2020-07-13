@@ -1,0 +1,67 @@
+﻿@model PersonalEstore.cs.ViewModel.MenClothingViewModel
+@{
+    ViewBag.Title = "AddClothing";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Add Clothing</h2>
+
+@using (Html.BeginForm("SaveClothing", "Clothing", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <div class="form-group">
+        @Html.LabelFor(m => m.MenClothing.Name)
+        @Html.TextBoxFor(m => m.MenClothing.Name, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.MenClothing.Name)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.MenClothing.Price)
+        @Html.TextBoxFor(m => m.MenClothing.Price, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.MenClothing.Price)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.MenClothing.Stock)
+        @Html.TextBoxFor(m => m.MenClothing.Stock, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.MenClothing.Stock)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.MenClothing.Color)
+        @Html.TextBoxFor(m => m.MenClothing.Color, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.MenClothing.Color)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.MenClothing.Size)
+        @Html.TextBoxFor(m => m.MenClothing.Size, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.MenClothing.Size)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.MenClothing.CategoryId)
+        @Html.DropDownListFor(m => m.MenClothing.CategoryId, new SelectList(Model.Categories, "Id", "Name"), "Select Category", new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.MenClothing.Category)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.MenClothing.ManufacturerId)
+        @Html.DropDownListFor(m => m.MenClothing.ManufacturerId, new SelectList(Model.Manufacturers, "Id", "Name"), "Select Manufturer", new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.MenClothing.ManufacturerId)
+    </div>
+
+    <div class="form-group">
+        <input type="file" name="postedFile" class=" form-control-file" />
+        <small>Upload Image</small>
+    </div>
+
+    @Html.HiddenFor(m => m.MenClothing.Id)
+    <button class="mt-5 btn btn-primary" type="submit">Save</button>
+}
+
+@section scripts
+{
+    @*this bundle to implement Jquery client side validation.
+        it this bundle is not referenced here client side validation will be inactive*@
+    @Scripts.Render("~/bundles/jqueryval")
+}

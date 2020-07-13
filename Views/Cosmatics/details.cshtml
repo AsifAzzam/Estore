@@ -1,0 +1,74 @@
+﻿@model PersonalEstore.cs.Models.Cosmatics
+
+@{
+    ViewBag.Title = "details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var _context = new PersonalEstore.cs.Models.ApplicationDbContext();
+}
+
+<div class="myjumbo jumbotron jumbotron-fluid">
+    <img class="" src="~/images/olx.png" />
+</div>
+
+<div class="row">
+    <div class="col-2 mt-5">
+        @Html.Partial("SideMenu", _context.Category.ToList())
+    </div>
+    <div class="col-8 text-center">
+        <h2 class="mb-5 pt-3 ml-auto">@Model.Name </h2>
+        <img class="" src="~/image/@Model.Image" alt="image Missing" style="height:350px;" />
+        <table class="table mx-auto" style="width:50%;">
+            <tr>
+                <td>Name</td>
+                <td>@Model.Name</td>
+            </tr>
+            <tr>
+                <td>Price</td>
+                <td>@Model.Price</td>
+            </tr>
+            <tr>
+                <td>Manufacturer</td>
+                <td>@Model.Manufacturer.Name</td>
+            </tr>
+            <tr>
+                <td>Category</td>
+                <td>@Model.Category.Name</td>
+            </tr>
+
+        </table>
+    </div>
+    <div class="col-2"></div>
+</div>
+<div class="row justify-content-center">
+    <div class="flex-row mr-5">
+        @if (Request.IsAuthenticated)
+        {
+            @Html.ActionLink("Buy", "Index", "Home", routeValues: null, htmlAttributes: new { id = "loginLink", @class = "btn btn-primary nav-link" })
+
+        }
+        else
+        {
+            @Html.ActionLink("Buy", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink", @class = "btn btn-primary nav-link" })
+        }
+    </div>
+    <div class="flex-row ml-5">
+        @if (Request.IsAuthenticated)
+        {
+            @Html.ActionLink("Add To Cart", "Index", "Home", routeValues: null, htmlAttributes: new { id = "loginLink", @class = "btn btn-primary nav-link" })
+
+        }
+        else
+        {
+            @Html.ActionLink("Add To Cart", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink", @class = "btn btn-primary nav-link" })
+        }
+    </div>
+</div>
+
+@section scripts
+
+{
+    <script>
+
+    </script>
+}
+

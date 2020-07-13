@@ -1,0 +1,71 @@
+﻿@model IEnumerable<PersonalEstore.cs.Models.Category>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 class="pt-5 mb-5 text-primary">Categories</h2>
+
+<table id="category" class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Code</th>
+            <th>Parent Category</th>
+            <th>Delete</th>
+            <th>Edit</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var m in Model)
+        {
+        <tr>
+            <td>@Html.ActionLink(m.Name, "Edit", "Category", new { id = m.Id }, new { @class = "btn-link" })</td>
+            <td>@m.Category_code</td>
+
+            @if(m.Parent == null)
+            {
+             <td>No Parents</td>
+            }
+            else
+                 { <td>@m.Parent.Name</td>}
+          
+            <td>
+                <button data-cat-id="@m.Id" class="btn btn-primary js-delete">Delete</button>
+            </td>
+            <td>
+                @*<button data-cat-id="@m.Id" class="btn btn-link js-edit">Edit</button>*@
+                @Html.ActionLink("Edit", "Edit","Category", new {id = m.Id }, new { @class = "btn btn-primary" })
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>
+@section scripts
+{
+    
+<script>
+    $(document).ready(function () {
+
+        var table = $("#category").DataTable();
+        
+        $("#category").on("click", ".js-delete", function () {
+            var btn = $(this);
+            bootbox.confirm("Are You Sure you want to delete", function (result) {
+                if (result) {
+                    $.ajax({
+                        url: "/category/delete/" + btn.attr("data-cat-id"),
+                        success: function () {
+                            console.log("before Delete")
+                            table.row(btn.parents("tr")).remove().draw();
+                            console.log("In Delete")
+                        }
+                    });
+                }
+            });
+
+
+        });
+    });
+</script>  
+}

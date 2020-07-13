@@ -1,0 +1,76 @@
+﻿@model PersonalEstore.cs.ViewModel.CategoryViewModel
+@{
+    ViewBag.Title = "AddCategory";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 class="pt-5">Add New Category</h2>
+
+@Html.ValidationSummary(true, "Please Remove Following Errors")
+@using (Html.BeginForm("SaveCategory", "Category",FormMethod.Post, new {id = "catform" }))
+{
+    <div class="form-group">
+        @Html.LabelFor(m => m.Category.Name)
+        @Html.TextBoxFor(m => m.Category.Name, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Category.Name)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Category.Category_code)
+        @Html.TextBoxFor(m => m.Category.Category_code, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Category.Category_code)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Category.ParentId)
+
+        @Html.DropDownListFor(m => m.Category.ParentId,
+        new SelectList(Model.ParentsCategories, "Id", "Name"),
+        "Select Parent Category",
+        new { @class = "form-control",@id="catselectionlist", @name= "mylist"})
+        @Html.ValidationMessageFor(m => m.Category.ParentId)
+          
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 col-sm-4">
+            <ul id="catlist" class="list-group mb-5"></ul>
+            
+        </div>
+    </div>
+    @Html.HiddenFor(m=>m.Category.Id)
+    <button class="btn btn-primary" type="submit">Add Category</button>
+
+}
+
+@section scripts
+{
+    @*this bundle to implement Jquery client side validation.
+        it this bundle is not referenced here client side validation will be inactive*@
+    @Scripts.Render("~/bundles/jqueryval")
+    <script>
+        $(document).ready(function () {
+            var parents = [];
+            $("#catselectionlist").change(function () {
+                cat = $(this)
+                var mytext = $("#catselectionlist option:selected").text();
+                $("#catlist").append("<li class='list-group-item'>" + mytext + "</li>");
+                
+            });
+            //$("#catform").submit(function () {
+            //    mydata = $("#catform").serialize();
+            //    mydata = JSON.stringify(mydata);
+            //    console.log(mydata)
+                
+            //    //$.ajax({
+            //    //    url: "/category/SaveCategory" + $("#catform").serialize(),
+            //    //    method: "POST",
+            //    //    data: mydata
+                   
+            //    //});
+                
+            //});
+        });
+    </script>
+}
+

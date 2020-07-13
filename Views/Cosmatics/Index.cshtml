@@ -1,0 +1,38 @@
+﻿@model IEnumerable<PersonalEstore.cs.Models.Cosmatics>
+@{
+    ViewBag.Title = "Cosmatics";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var _context = new PersonalEstore.cs.Models.ApplicationDbContext();
+}
+
+
+<div class="myjumbo jumbotron jumbotron-fluid">
+    <img class="" src="~/images/olx.png" />
+</div>
+
+<h2 class="text-center text-center">Cosmatics</h2>
+<div class="row m-0">
+    <div class="col-2">
+        @Html.Partial("SideMenu", _context.Category.ToList())
+    </div>
+    <div class="col-10">
+        <div class="container">
+            @foreach (var m in Model)
+            {
+                <div class="row d-inline-block m-1">
+
+                    <a href="/Cosmatics/details/@m.Id" class="text-muted">
+                        <div class="card text-center m-3 shadow" style="border: 1px solid rgba(0, 116, 240, 0.4)">
+                            <img src="~/image/@m.Image" class="img-fluid card-img" style="width:200px; height:170px; " />
+                            <p class="card-text">
+                                @m.Name<br />
+                                @m.Manufacturer.Name<br />
+                                <text class="text-danger">@m.Price PKR</text>
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            }
+        </div>
+    </div>
+</div>

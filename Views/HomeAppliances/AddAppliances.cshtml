@@ -1,0 +1,75 @@
+﻿@model PersonalEstore.cs.ViewModel.AppliancesViewModel
+@{
+    ViewBag.Title = "AddAppliances";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Add Appliances</h2>
+
+@using (Html.BeginForm("SaveAppliances", "HomeAppliances", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <div class="form-group">
+        @Html.LabelFor(m => m.Appliances.Name)
+        @Html.TextBoxFor(m => m.Appliances.Name, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Appliances.Name)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Appliances.Price)
+        @Html.TextBoxFor(m => m.Appliances.Price, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Appliances.Price)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Appliances.Stock)
+        @Html.TextBoxFor(m => m.Appliances.Stock, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Appliances.Stock)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Appliances.Colors)
+        @Html.TextBoxFor(m => m.Appliances.Colors, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Appliances.Colors)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Appliances.Display)
+        @Html.TextBoxFor(m => m.Appliances.Display, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Appliances.Display)
+    </div> 
+    
+    <div class="form-group">
+        @Html.LabelFor(m => m.Appliances.Size)
+        @Html.TextBoxFor(m => m.Appliances.Size, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Appliances.Size)
+    </div> 
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Appliances.CategoryId)
+        @Html.DropDownListFor(m => m.Appliances.CategoryId, new SelectList(Model.Categories, "Id", "Name"), "Select Category", new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Appliances.Category)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Appliances.ManufacturerId)
+        @Html.DropDownListFor(m => m.Appliances.ManufacturerId, new SelectList(Model.Manufacturers, "Id", "Name"), "Select Manufturer", new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Appliances.ManufacturerId)
+    </div>
+
+    <div class="form-group">
+        <input type="file" name="postedFile" class=" form-control-file" />
+        @*@Html.LabelFor(m=>m.Appliances.Image,new {@class = "custom-file-label" })*@
+        <small>Upload Image</small>
+    </div>
+
+    @Html.HiddenFor(m => m.Appliances.Id)
+    <button class="mt-5 btn btn-primary" type="submit">Save</button>
+}
+
+@section scripts
+{
+    @*this bundle to implement Jquery client side validation.
+        it this bundle is not referenced here client side validation will be inactive*@
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
